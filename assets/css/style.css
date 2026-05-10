@@ -1,0 +1,16 @@
+:root{--max:1200px;--text:#333;--bg:#fff}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,"Microsoft JhengHei",sans-serif;color:var(--text);background:var(--bg)}
+.container{max-width:var(--max);margin:0 auto;padding:0 16px}
+.site-header,.site-footer{border-bottom:1px solid #ddd;background:#fff}
+.site-footer{border-top:1px solid #ddd;border-bottom:0;padding:16px 0;margin-top:40px}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;min-height:64px}
+.site-nav{display:flex;gap:20px}
+.site-nav a{text-decoration:none;color:#222}
+.nav-toggle{display:none;background:none;border:1px solid #ccc;padding:6px 10px;border-radius:6px}
+main.container{padding:28px 16px}
+@media (max-width: 768px){
+  .nav-toggle{display:block}
+  .site-nav{display:none;position:absolute;top:64px;left:0;right:0;background:#fff;border-top:1px solid #eee;padding:12px 16px;flex-direction:column;gap:12px}
+  .site-nav.is-open{display:flex}
+}
