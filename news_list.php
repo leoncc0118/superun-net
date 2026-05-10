@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="canonical" href="news_list.php">
 </head>
-<body>
+<body class="inner-page">
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="index.html"><img src="old/images/logos.gif" alt="SUPERUN 全壘打" /></a>
@@ -74,7 +74,7 @@
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer inner-footer">
     <div class="container">Copyright © Superun</div>
   </footer>
 
