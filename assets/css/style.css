@@ -13,7 +13,7 @@ body{margin:0;font-family:Arial,"Microsoft JhengHei",sans-serif;color:var(--text
 .nav-toggle{display:none;margin-left:auto;background:none;border:1px solid #ccc;border-radius:6px;padding:6px 10px}
 
 .hero{background:#ddd}
-.hero img{display:block;width:100%;max-width:980px;margin:0 auto;height:auto}
+.hero img{display:block;width:100%;max-width:1180px;margin:0 auto;height:auto}
 
 .main-grid{display:grid;grid-template-columns:2fr 1fr;gap:20px;padding:24px 16px 40px}
 .card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px}
