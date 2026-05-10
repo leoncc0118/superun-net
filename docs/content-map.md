@@ -16,7 +16,7 @@
 - index.html
 - led_list.html
 - news_detail.php
-- news_list.php
+- news_list.html
 - partnes_01.html
 - product_01.html
 - slink.html
@@ -36,7 +36,7 @@
 - index.html
 - led_list.html
 - news_detail.php
-- news_list.php
+- news_list.html
 - partnes_01.html
 - product_01.html
 - team_01.html

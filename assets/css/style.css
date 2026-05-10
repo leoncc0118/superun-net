@@ -127,7 +127,7 @@ h2{margin:0 0 10px 0;font-size:22px;color:#222}
 .about-badge{display:flex;align-items:center;gap:10px;border:1px solid #d8e1ef;background:#f6f9ff;border-radius:8px;padding:9px 10px;color:#14366c;font-weight:700;font-size:13px}
 .about-badge img{flex:0 0 auto;width:37px;height:36px}
 
-/* news page: legacy list/table look from old news_list.php */
+/* news page: legacy list/table look from old news_list.html */
 .news-legacy{padding-top:12px;max-width:1012px;gap:0;background:#3764af}
 .news-banner{border-radius:2px 2px 0 0}
 .news-shell{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:20px;background:#fff;padding:20px 30px 30px 22px;border-radius:0 0 10px 10px;box-shadow:0 1px 3px rgba(0,0,0,.5)}
