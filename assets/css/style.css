@@ -116,6 +116,51 @@ h2{margin:0 0 10px 0;font-size:22px;color:#222}
 .about-badge{display:flex;align-items:center;gap:10px;border:1px solid #d8e1ef;background:#f6f9ff;border-radius:8px;padding:9px 10px;color:#14366c;font-weight:700;font-size:13px}
 .about-badge img{flex:0 0 auto;width:37px;height:36px}
 
+/* news page: legacy list/table look from old news_list.php */
+.news-legacy{padding-top:12px;max-width:1012px;gap:0;background:#3764af}
+.news-banner{border-radius:2px 2px 0 0}
+.news-shell{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:20px;background:#fff;padding:20px 30px 30px 22px;border-radius:0 0 10px 10px;box-shadow:0 1px 3px rgba(0,0,0,.5)}
+.news-main-panel{min-width:0;background:#fff}
+.news-head{margin-bottom:15px}
+.news-head h1{font-size:15px}
+.legacy-news-board{width:min(600px,100%);margin:0 auto 36px;background:#fff;font-size:13px;color:#666}
+.legacy-news-header{display:grid;grid-template-columns:1fr 96px;align-items:center;height:35px;padding:0 10px;background:#f4f7fb;border:1px solid #cfd7e2;border-bottom:0;color:#000;font-weight:700}
+.legacy-news-list{list-style:none;margin:0;padding:0;border-left:1px solid #e1e1e1;border-right:1px solid #e1e1e1;background:repeating-linear-gradient(#fff 0,#fff 29px,#ececec 30px)}
+.legacy-news-list li{display:grid;grid-template-columns:1fr 96px;gap:8px;align-items:center;min-height:30px;padding:0 10px;border-bottom:1px solid #ececec}
+.legacy-news-list a{display:block;padding-left:20px;background:url('../../old/images/news_ao.gif') no-repeat left center;color:#666;text-decoration:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.legacy-news-list a:hover{color:#039;text-decoration:underline}
+.legacy-news-list time{text-align:center;color:#666;font-size:12px}
+.legacy-pager{border-top:1px solid #ccc;text-align:center;padding-top:14px;font-size:12px}
+.legacy-pager span,.legacy-pager strong{display:inline-block;border:1px solid #ccc;padding:4px 8px;margin:0 3px;background:#fff}
+.legacy-pager strong{border-color:#003f7e;background:#eee;color:#000}
+.legacy-pager .disabled{color:#aaa;border-color:#eee}
+.news-side-panel{background:url('../../old/images/cnews_09.jpg') no-repeat right top;min-height:420px;padding-top:150px}
+.news-side-title{height:40px;line-height:40px;text-align:center;color:#000;border-bottom:1px solid #ccc;font-weight:700}
+.news-side-panel a:not(.side-contact){display:block;height:34px;line-height:34px;text-align:center;text-decoration:none;color:#666;border-bottom:1px solid #ccc;background:linear-gradient(#fff,#f2f2f2)}
+.news-side-panel a:not(.side-contact):hover,.news-side-panel a.active{color:#06c}
+.news-side-panel img{display:block;max-width:100%;height:auto;margin:14px auto 0;border-radius:4px}
+.news-side-panel .side-contact img{margin-top:12px;border-radius:0}
+
+/* contact page: legacy contact_01 layout */
+.contact-legacy{padding-top:12px;max-width:1012px;gap:0;background:#3764af}
+.contact-banner{position:relative;border-radius:2px 2px 0 0}
+.contact-banner-text{position:absolute;left:17%;bottom:33%;margin:0;color:#fff;font-size:15px;font-family:"Arial Black",Arial,"Microsoft JhengHei",sans-serif;text-shadow:0 1px 3px rgba(0,0,0,.55)}
+.contact-shell{background:#fff url('../../old/images/cont-b_10.jpg') no-repeat left top;padding:20px 45px 46px 60px;border-radius:0 0 10px 10px;box-shadow:0 1px 3px rgba(0,0,0,.5);min-height:300px}
+.contact-head{display:block;height:auto;border-bottom:0;margin-bottom:18px}
+.contact-head h1{font-size:15px;margin-bottom:4px}
+.contact-head p{margin:0 0 0 25px;color:#666;font-size:13px;line-height:24px}
+.contact-card-legacy{min-height:130px;margin:0 auto 24px;padding:10px;display:flex;align-items:flex-start;gap:20px;background:rgba(255,255,255,.9)}
+.contact-icon{flex:0 0 auto;width:108px;height:99px}
+.legacy-contact-list{list-style:none;margin:0;padding:0;color:#666;line-height:26px;font-size:14px}
+.legacy-contact-list b{color:#000}
+.legacy-contact-list a{color:#039;text-decoration:none}
+.legacy-contact-list a:hover{text-decoration:underline}
+.contact-note-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-left:10px}
+.contact-note-grid>div{border:1px solid #d8d8d8;border-radius:8px;background:#fff;padding:14px}
+.contact-note-grid h2{font-size:18px;margin:0 0 6px;color:#000}
+.contact-note-grid p{margin:0;color:#555}
+.contact-note-grid ul{margin:0;padding-left:20px;color:#555}
+
 @media (max-width: 980px){
   .main-grid,.band,.contact-grid{grid-template-columns:1fr}
   .feature-grid,.news-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -129,6 +174,11 @@ h2{margin:0 0 10px 0;font-size:22px;color:#222}
   .breadcrumb{position:static;margin-top:-4px;margin-bottom:10px}
   .about-headline{height:auto;display:block;min-height:45px}
   .about-badges{grid-template-columns:1fr}
+  .news-shell{grid-template-columns:1fr;padding:18px 22px 26px}
+  .news-side-panel{min-height:0;padding-top:0;background:#f8fbff;border:1px solid #d8e1ef;border-radius:8px;padding-bottom:12px}
+  .news-side-title{border-bottom:1px solid #d8e1ef}
+  .contact-shell{padding:18px 24px 30px;background:#fff}
+  .contact-banner-text{left:8%;right:8%;bottom:24%;font-size:14px}
 }
 @media (max-width: 768px){
   .logo img{width:160px}
@@ -158,4 +208,16 @@ h2{margin:0 0 10px 0;font-size:22px;color:#222}
   .about-copy{font-size:15px;line-height:1.75}
   .about-float-img{float:none;display:block;width:207px;max-width:100%;margin:0 auto 14px}
   .breadcrumb{font-size:12px}
+  .news-legacy,.contact-legacy{padding-left:10px;padding-right:10px}
+  .legacy-news-header,.legacy-news-list li{grid-template-columns:1fr}
+  .legacy-news-header span:last-child{display:none}
+  .legacy-news-list li{padding:7px 10px;gap:2px}
+  .legacy-news-list a{white-space:normal;line-height:1.45}
+  .legacy-news-list time{text-align:left;padding-left:20px}
+  .contact-banner-text{position:static;background:#174a91;padding:9px 12px;font-size:13px;line-height:1.5}
+  .contact-shell{padding:14px}
+  .contact-head p{margin-left:0}
+  .contact-card-legacy{display:block}
+  .contact-icon{display:block;margin:0 0 10px}
+  .contact-note-grid{grid-template-columns:1fr;margin-left:0}
 }
