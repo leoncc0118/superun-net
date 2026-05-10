@@ -1,5 +1,4 @@
 User-agent: *
 Disallow: /old/
-Disallow: /pages/
 
 Sitemap: https://superun.net/sitemap.xml
