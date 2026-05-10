@@ -1,0 +1,140 @@
+@charset "utf-8";
+.album_list {
+	overflow: auto;
+	list-style-type: none;
+}
+.album_list li {
+	background-image: url(../images/abm-bg.png);
+	background-repeat: no-repeat;
+	height: 214px;
+	width: 200px;
+	display: block;
+	float: left;
+	padding-top: 20px;
+	margin-right: 18px;
+}
+.cmain {
+	padding-right: 0px;
+}
+
+.album-pages {
+	clear: both;
+}
+.album_list li a {
+	display: block;
+	height: 97px;
+	width: 170px;
+	overflow: hidden;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	border: 2px solid #FFF;
+}
+.album_list li a:hover {
+	border: 2px solid #FFCC00;
+	
+}
+.album_list li a img {
+	position: absolute;
+	top: -35px;
+	right: -25px;
+	width: 200px;
+}
+
+.album_list li h2 {
+	font-size: 15px;
+	font-weight: bold;
+	color: #000000;
+	display: block;
+	text-align: center;
+	line-height: normal;
+	padding-top: 12px;
+	background-image:url(../images/bgs-sd.jpg);
+	background-repeat:no-repeat;
+	background-position:center top;
+}
+.n-list-f {
+	text-align: center;
+	color: #000;
+	font-weight: bold;
+	padding-top: 15px;
+	clear: both;
+}
+.n-list-f img{
+	vertical-align: middle;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.n-list-f a {
+	color: #666;
+	text-decoration: none;
+	font-weight: normal;
+}
+.n-list-f a:hover {
+	color: #0033CC;
+	text-decoration: none;
+}
+.album-cont {
+	margin-bottom: 15px;
+}
+.album_main {
+	overflow: auto;
+	list-style-type: none;
+}
+.album_main li {
+	float: left;
+	margin-bottom: 20px;
+	margin-right: 10px;
+	width: 150px;
+	height: 150px;
+	display: block;
+
+}
+/*----------img 垂直置中--------*/
+.pic-v{
+
+	text-align: center;
+	vertical-align: middle;
+	width: 150px;
+	height: 150px;
+	line-height : 150px;
+    white-space : nowrap; 
+
+  *font-size : 120px; 
+  *font-family : Arial;
+}
+.pic-v:after {
+	content : ".";
+	font-size : 1px;
+	margin-left : -1px;
+	opacity : 0;
+}
+.album_main li a img {
+	border: 1px solid #DBDBDB;
+	padding: 5px;
+	max-height: 130px;
+	max-width: 130px;
+	vertical-align: middle;
+	
+}
+.album_main li a:hover img {
+	border: 1px solid #003399;	
+}
+.videos iframe {
+	display: block;
+	width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.album_list li p {
+	font-size: 13px;
+	line-height: 20px;
+	color: #666;
+	padding-top: 10px;
+}
+#outer-wrapper #content-wrapper {
+	padding-right:30px;
+}
+.videos,.cont-m {
+	margin-bottom: 20px;
+}

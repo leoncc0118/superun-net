@@ -1,0 +1,164 @@
+.pd-head {
+	width: 616px;
+	padding-top: 10px;
+	
+}
+.pd-head p {
+	width: 330px;
+	margin-bottom: 10px;
+	color: #333;
+	line-height: 24px;
+}
+.pd-head h4 {
+	color: #000;
+	font-size: 13px;
+	font-weight: bold;
+}
+.msu h2 {
+	font-size: 15px;
+	color: #000;
+}
+.dlcmm dd h3 {
+	color: #35465B;
+	font-size: 13px;
+	font-weight: bold;
+	background-color: #F6F9FB;
+	border: 1px solid #CCC;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 8px;
+}
+.msu h3 {
+	color: #039;
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+.msu p {
+	font-size: 13px;
+}
+.sul-dl dd img {
+	float: left;
+	margin-right:25px;
+	overflow:auto;
+}
+.sul-dl dd {
+	display: block;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	overflow: auto;
+}
+.msu {
+	padding-top: 8px;
+	padding-right: 30px;
+}
+.msu h4 {
+	color: #F60;
+	font-size: 13px;
+}
+.msu ul {
+	padding-left: 25px;
+	list-style-position: inside;
+	margin-bottom: 10px;
+}
+.msu table {
+	border-collapse:collapse;
+	width:65%;
+	margin-bottom:10px;
+}
+.msu table td ,.msu table th{
+	padding: 3px;
+	border: 1px solid #999;
+}
+.msu table th{
+	background-color: #333;
+	text-align:left;
+}
+.msu table strong{
+	color:#fff;
+}
+.sul-dl .ddms {
+	height: 550px;
+}
+.sul-dl .ddms2 {
+	height: auto;
+}
+.mm019 {
+
+}
+.main-p{
+	margin-bottom:30px;
+}
+.h2m{
+	font-size:20px;
+	margin-bottom:10px;
+	color:#000;
+}
+.mmh2{
+	font-size:18px;
+	margin-bottom:20px;
+	color:#000;
+}
+.pst{
+	padding-left:30px;
+	color:#09F;
+	margin-bottom:10px;
+}
+.pst a{
+	color:#F30;
+	text-decoration: none;
+}
+.pst a:hover{
+	text-decoration: underline;
+}.tt-h1 {
+	font-size: 18px;
+}
+.tt-h2 {
+	font-size: 15px;
+	color: #0066BF;
+}
+#content-wrapper .art-ps{
+	width:auto;
+	float:none;
+}
+.psts{
+	width:350px;
+	padding-left:25px;
+}
+.adsb{
+	height:280px;
+}
+.adsb2{
+	padding-left:25px;
+}
+.adsb3{
+	padding-left:25px;
+}
+.s3s{
+	float:left;
+	overflow:auto;
+}
+.abdus{
+	float:right;
+	width:520px;
+
+}
+.abdus ol{
+	padding-left:20px;
+	margin-bottom:10px;
+}
+#content-wrapper .art-ps section{
+	overflow:auto
+}
+.subv{
+	position: absolute;
+	left: 181px;
+	top: 275px;
+}
+.mhead3{
+	padding-left:25px;
+}

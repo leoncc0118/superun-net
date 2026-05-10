@@ -1,0 +1,214 @@
+<?php require_once('Connections/connect.php'); ?>
+<?php
+mysql_select_db($database_connect, $connect);
+$query_RecNews = "SELECT * FROM news WHERE show_front = 1 AND class_id = 1 ORDER BY news_date DESC LIMIT 4";
+$RecNews = mysql_query($query_RecNews, $connect) or die(mysql_error());
+$row_RecNews = mysql_fetch_assoc($RecNews);
+$totalRows_RecNews = mysql_num_rows($RecNews);
+
+mysql_select_db($database_connect, $connect);
+$query_RecNews1 = "SELECT * FROM news WHERE show_front = 1 AND class_id = 2 ORDER BY news_date DESC LIMIT 3";
+$RecNews1 = mysql_query($query_RecNews1, $connect) or die(mysql_error());
+$row_RecNews1 = mysql_fetch_assoc($RecNews1);
+$totalRows_RecNews1 = mysql_num_rows($RecNews1);
+
+mysql_select_db($database_connect, $connect);
+$query_RecNews2 = "SELECT * FROM news WHERE show_front = 1 AND class_id = 2 AND head = 1";
+$RecNews2 = mysql_query($query_RecNews2, $connect) or die(mysql_error());
+$row_RecNews2 = mysql_fetch_assoc($RecNews2);
+$totalRows_RecNews2 = mysql_num_rows($RecNews2);
+?>
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="ROBOTS" content="INDEX,FOLLOW">
+<meta name="revisit-after" content="1 days">
+<meta name="description" content="Superun全壘打-最新棒球打擊練習機，整合 運動、挑戰、娛樂、遊戲、影音。棒球競賽、棒球運動、棒球練習機">
+<meta name="keywords" content="棒球競賽,棒球運動,棒球練習機,superun,全壘打,指定格,棒球九宮格,大魯閣棒球,全壘打棒球,homeruns,棒球遊戲,打擊運動,棒球打擊,棒球全壘打,棒球揮棒練習,運動練習機,棒球打擊機,棒球打擊選手,棒球聯盟,棒球競賽,棒球運動,棒球練習機,superun,全壘打,指定格,棒球九宮格,大魯閣棒球,全壘打棒球,homeruns,棒球遊戲,打擊運動,棒球打擊,棒球全壘打,棒球揮棒練習,運動練習機,棒球打擊機,棒球打擊選手,棒球聯盟,棒球競賽,棒球運動,棒球練習機,superun,全壘打,指定格,棒球九宮格,大魯閣棒球,全壘打棒球,homeruns,棒球遊戲,打擊運動,棒球打擊,棒球全壘打,棒球揮棒練習,運動練習機,棒球打擊機,棒球打擊選手,棒球聯盟,">
+<meta name="copyright" content="Copyright © 2012 駿博工程有限公司 版權所有">
+<meta name="author" content="CITIAR Technology for Leon Design">
+<title>Superun全壘打-棒球競賽、棒球運動、棒球練習機</title>
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<![endif]-->
+<!--[if lte IE 6]>
+<script type="text/javascript" src="iepngfix_tilebg.js"></script>
+<![endif]-->
+<link href="css/iSRStyle.css" rel="stylesheet" type="text/css" />
+<link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+<link href="css/itabeStyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="js/includehtml.js"></script>
+<script type="text/javascript" src="js/tablist.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+<script>
+// Can also be used with $(document).ready()
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide",
+    controlNav: "thumbnails"
+  });
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32377803-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+<div id="outer-wbg">
+<div id="outer-wrapper">
+	<header id="header-wrapper">
+ 
+  </header>
+	<div id="banner-wrapper"><div id="iflash" style="position:relative;"><img src="images/main-mm_08.jpg" width="980" height="411"><a style="position: absolute; top: 16px; left: 43px;" href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></div>
+	<script type="text/javascript">
+  var flashvars = {};
+  var params = {};
+    params.menu="false";
+    params.wmode="transparent";
+    params.bgcolor="#CCCCCC";
+    params.allowfullscreen="true";
+	params.allowscriptaccess="always";
+  var attributes = {};
+    attributes.id="iflash";
+    attributes.name="iflash";
+  swfobject.embedSWF("", "iflash", "980", "441", "10.0.2", "false", flashvars, params, attributes);
+</script></div>
+	<div id="content-wrapper">
+    	<div id="top-wrapper">
+             <div class="abouts"> <a href="about_01.html"><img src="images/img-abu.jpg" width="182" height="118" class="imgp"></a>
+               <section class="ab-w"><h2 class="ab-h2"><img src="images/balls.gif" width="17" height="17">關於SUPERUN</h2>
+         <p>遊戲方式，由投球機投出，打擊者揮棒至各大分數打點，並累積分數進行遊戲。然而取名用意『SUPERUN全壘打』釋義成SUPER RUN 翻譯 [SUPER] 超級、最佳，[ RUN] 全部落實打點、打擊者等意思。..
+          </p><a href="about_01.html" class="mores"></a></section>
+        </div>
+      	<div class="video"><iframe name="iframe" title="SUPERUN影片導覽" src="video_01.html" frameborder="0" scrolling="No"></iframe>
+<div class="vid-side">
+<ul class="vid-button">
+  <li class="vd-01"><a href="video_01.html" target="iframe"><strong>SUPERUN影片介紹</strong></a></li>
+  <li class="vd-02"><a href="video_02.html" target="iframe"><strong>棒球打擊機影片介紹</strong></a></li>
+  <li class="vd-03"><a href="video_03.html" target="iframe"><strong>投球機影音簡介</strong></a></li>
+</ul></div>
+		</div>
+        </div>
+        <article>
+         <section class="se_01">
+        <div class="main-news">
+        <ul class="tabs-list">
+<li><a href="#ts1">動態內容</a></li><li><a href="#ts2">最新消息</a></li>
+</ul>
+<div class="tab_contwrapper">
+<div id="ts1" class="tabs-list_content" style="display:block;"> 
+<?php 
+							mysql_select_db($database_connect, $connect);
+$query_RecPhoto = "SELECT * FROM photo WHERE sort = 1 AND photo_id = ".$row_RecNews2['id'];
+$RecPhoto = mysql_query($query_RecPhoto, $connect) or die(mysql_error());
+$row_RecPhoto = mysql_fetch_assoc($RecPhoto);
+$totalRows_RecPhoto = mysql_num_rows($RecPhoto);
+							?>
+<a href="albums_detail.php?id=<?php echo $row_RecNews2['id']; ?>"><img src="a/photo/news/<?php echo $row_RecPhoto['url']; ?>" width="123" height="86" class="img-m"></a>
+<div class="m-main">
+<h2><?php echo $row_RecNews2['title']; ?> </h2>
+<p><?php echo cut($row_RecNews2['des'],35); ?></p>
+<a href="albums_detail.php?id=<?php echo $row_RecNews2['id']; ?>" class="mores"></a></div>
+</div>
+<div id="ts2" class="tabs-list_content" style="display:none; ">  
+<table class="inews-tlist">
+<?php if($totalRows_RecNews>0) { ?>
+   							<?php do { ?>
+<tr><th><a href="news_detail.php?id=<?php echo $row_RecNews['id']; ?>" alt="<?php echo $row_RecNews['title']; ?>" title="<?php echo $row_RecNews['title']; ?>"><?php echo cut($row_RecNews['title'],20); ?></a></th><td><?php echo $row_RecNews['news_date']; ?></td></tr>
+
+<?php } while ($row_RecNews = mysql_fetch_assoc($RecNews)); ?>
+          					<?php } //$totalRows_ReNews>0 ?>
+
+</table></div></div>
+        
+        </div>
+        <div class="flexslider">
+  <ul class="slides">
+   <li data-thumb="images/main-ad_48.jpg">
+      <img src="images/main-ad_33.jpg" />
+    </li>
+    <li data-thumb="images/main-ad_50.jpg">
+      <img src="images/main-ad_33.jpg" />
+    </li>
+    <li data-thumb="images/main-ad_52.jpg">
+      <img src="images/main-ad_33.jpg" />
+    </li>
+  </ul>
+</div>
+         </section>
+                  <section class="se_02">
+            <ul class="ab-list">
+            <?php if($totalRows_RecNews1>0) { ?>
+   							<?php do { ?>
+                            <?php 
+							mysql_select_db($database_connect, $connect);
+$query_RecPhoto = "SELECT * FROM photo WHERE sort = 1 AND photo_id = ".$row_RecNews1['id'];
+$RecPhoto = mysql_query($query_RecPhoto, $connect) or die(mysql_error());
+$row_RecPhoto = mysql_fetch_assoc($RecPhoto);
+$totalRows_RecPhoto = mysql_num_rows($RecPhoto);
+							?>
+            	<li>
+                <?php if ($totalRows_RecPhoto>0) { ?><a href="albums_detail.php?id=<?php echo $row_RecNews1['id']; ?>"><img src="a/photo/news/<?php echo $row_RecPhoto['url']; ?>" width="37" height="36"></a><?php } ?>
+                <span><?php echo $row_RecNews1['news_date']; ?></span>
+                    <h2><a href="albums_detail.php?id=<?php echo $row_RecNews1['id']; ?>"><?php echo cut($row_RecNews1['title'],8); ?></a></h2> 
+                    <p><?php echo cut($row_RecNews1['des'],9); ?></p> </li>
+                    <?php } while ($row_RecNews1 = mysql_fetch_assoc($RecNews1)); ?>
+          					<?php } //$totalRows_ReNews1>0 ?>
+                   
+            </ul>
+        	<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fsuperunleon&amp;width=200&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:258px;" allowTransparency="true"></iframe>
+          </section>
+            
+        </article>
+        <aside>
+        <ul>
+        <li><a href="team_01.html" onMouseOut="document.tws.src='images/tw.gif'" onMouseOver="document.tws.src='images/tw1.gif'"><img src="images/tw.gif" alt="掌握superun" width="213" height="102" name="tws"></a></li>
+        <li><a href="contact_01.html" onMouseOut="document.tws2.src='images/contact_link.gif'" onMouseOver="document.tws2.src='images/contact_links.jpg'"><img src="images/contact_link.gif" alt="聯絡superun" width="209" height="75" name="tws2"></a></li>
+        <li><a href="news_list.php"><img src="images/act-img.jpg" alt="活動訊息" width="212" height="183"></a></li>
+        <li>
+        <h2 class="ab-h2">分享SUPERUN全壘打</h2>
+        <ol class="share_button">
+        <li class="s01" onclick="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));" title="推薦本文到Facebook去！" ></li>
+<li  class="s02"  onclick="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));" title="推薦本文到Twitter推特去！"></li>
+<li  class="s03" onclick="javascript: void(window.open('http://www.plurk.com/?qualifier=shares&amp;status=' .concat(encodeURIComponent(location.href)) .concat(' ') .concat('(') .concat(encodeURIComponent(document.title)) .concat(')')));" title="推薦本文到Plurk噗浪去！"></li>
+<li class="s04" title="推薦本文到google"><!-- Place this tag where you want the +1 button to render. -->
+<div class="g-plusone" data-annotation="none"></div>
+
+<!-- Place this tag after the last +1 button tag. -->
+<script type="text/javascript">
+  window.___gcfg = {lang: 'zh-TW'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script></li>
+
+</ol>
+
+        </li>
+        </ul>
+   
+        </aside>
+	</div>
+	<footer id="footer-wrapper">
+  
+	</footer>
+</div>
+</div>
+</body>
+</html>

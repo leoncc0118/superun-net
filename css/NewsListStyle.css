@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+#News-List-Board {
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 60px;
+}
+.TB-number,.TB-writer,.TB-ratio,.TB-remark,.LC-number,.LC-writer,.LC-ratio,.LC-remark {
+	display: none;
+}
+#NL-header table {
+	height: 30px;
+	line-height: 30px;
+	color: #000;
+	font-weight: bold;
+}
+#NL-header {
+	background-image: url(../images/tiw_stop_05.gif);
+	background-repeat: no-repeat;
+	height: 35px;
+	font-size:12px;
+}
+.TB-title {
+	padding-left: 10px;
+	width: 470px;
+}
+.TB-date {
+	width:70px;
+	text-align: center;
+}
+.LC-title a{
+	background-image: url(../images/news_ao.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 20px;
+	text-decoration: none;
+	color: #666;	
+}
+.LC-title a:hover{
+	color: #039;
+}
+.LC-title{
+	width: 470px;
+}
+#NL-content {
+	height: 299px;
+	font-size: 12px;
+	background-image: url(../images/line-list.gif);
+	background-repeat: repeat-y;
+	background-position: 0px top;
+}
+.LC-date {
+	color: #666;
+	text-align: center;
+	width:76px;
+}
+#NL-content td {
+	height: 30px;
+	line-height: 30px;
+}
+#NL-footer {
+	height: 40px;
+	padding-top: 6px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCC;
+}
+#pager ul.pages {
+	display:block;
+	border:none;
+	text-transform:uppercase;
+	font-size:10px;
+	text-align: center;
+	padding-top: 10px;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+}
+
+#pager ul.pages li {
+	list-style:none;
+	border:1px solid #ccc;
+	text-decoration:none;
+	margin:0 5px 0 0;
+	padding:5px;	
+	display: inline;
+}
+
+#pager ul.pages li:hover {
+border:1px solid #003f7e;
+}
+
+#pager ul.pages li.pgEmpty {
+border:1px solid #eee;
+color:#eee;
+}
+
+#pager ul.pages li.pgCurrent {
+border:1px solid #003f7e;
+color:#000;
+font-weight:700;
+background-color:#eee;
+}
+#outer-wrapper #content-wrapper {
+	padding-right: 30px;
+}
