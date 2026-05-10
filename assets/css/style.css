@@ -161,6 +161,17 @@ h2{margin:0 0 10px 0;font-size:22px;color:#222}
 .contact-note-grid p{margin:0;color:#555}
 .contact-note-grid ul{margin:0;padding-left:20px;color:#555}
 
+/* SEO compatibility pages for legacy URLs that have not been fully redesigned yet */
+.compat-page{max-width:1012px;padding-top:12px;background:#3764af}
+.compat-panel{background:#fff;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,.5);padding:22px 26px;color:#333}
+.compat-panel h2{font-size:20px;margin:14px 0 8px;color:#000}
+.compat-panel h3{font-size:17px;margin:10px 0 6px;color:#003399}
+.compat-panel p{margin:0 0 10px}
+.compat-media img{display:block;max-width:100%;height:auto;border-radius:8px;margin:0 0 16px}
+.compat-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:18px 0}
+.compat-grid section{border:1px solid #d8d8d8;border-radius:10px;padding:12px;background:#f9fbff}
+.compat-grid img{display:block;width:100%;height:145px;object-fit:cover;border-radius:8px;margin-bottom:8px}
+
 @media (max-width: 980px){
   .main-grid,.band,.contact-grid{grid-template-columns:1fr}
   .feature-grid,.news-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -179,6 +190,7 @@ h2{margin:0 0 10px 0;font-size:22px;color:#222}
   .news-side-title{border-bottom:1px solid #d8e1ef}
   .contact-shell{padding:18px 24px 30px;background:#fff}
   .contact-banner-text{left:8%;right:8%;bottom:24%;font-size:14px}
+  .compat-grid{grid-template-columns:1fr}
 }
 @media (max-width: 768px){
   .logo img{width:160px}

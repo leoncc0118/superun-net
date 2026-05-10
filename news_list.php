@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>最新消息 - Superun</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="canonical" href="news_list.php">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="old/images/logos.gif" alt="SUPERUN 全壘打" /></a>
+      <button class="nav-toggle" aria-label="切換選單">☰</button>
+      <nav class="site-nav">
+        <a href="index.html">首頁</a>
+        <a href="about_01.html">關於SUPERUN</a>
+        <a href="product_01.html">產品介紹</a>
+        <a href="news_list.php">最新消息</a>
+        <a href="contact_01.html">聯絡我們</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-wrap news-legacy">
+    <section class="legacy-banner news-banner">
+      <img src="old/images/cnews_06.jpg" alt="最新消息主視覺" class="legacy-banner-main" />
+    </section>
+
+    <section class="news-shell">
+      <article class="news-main-panel">
+        <div class="legacy-head news-head"><h1>最新消息</h1></div>
+
+        <div class="legacy-news-board" aria-label="最新消息列表">
+          <div class="legacy-news-header">
+            <span>標題</span>
+            <span>日期</span>
+          </div>
+
+          <ol class="legacy-news-list">
+            <li>
+              <a target="_blank" href="https://www.facebook.com/superunleon">2011年成功首創全球專利型高體感棒球打擊機</a>
+              <time datetime="2011-01-01">2011-01-01</time>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.facebook.com/media/set?vanity=superunleon&set=a.479610472067265">7/23~7/25 持會員卡免費打到爽</a>
+              <time datetime="2012-07-23">2012-07-23</time>
+            </li>
+            <li>
+              <a href="product_01.html">SUPERUN 全新棒球運動體驗</a>
+              <time datetime="2012-08-01">2012-08-01</time>
+            </li>
+            <li>
+              <a href="product_01.html">劃時代高體感棒球打擊練習機產品介紹</a>
+              <time datetime="2012-08-10">2012-08-10</time>
+            </li>
+          </ol>
+
+          <nav class="legacy-pager" aria-label="消息分頁">
+            <span class="disabled">上一頁</span>
+            <strong>1</strong>
+            <span class="disabled">下一頁</span>
+          </nav>
+        </div>
+      </article>
+
+      <aside class="news-side-panel">
+        <div class="news-side-title">動態訊息</div>
+        <a class="active" href="news_list.php">最新消息</a>
+        <a href="news_list.php">動態內容</a>
+        <img src="old/images/act-img.jpg" alt="活動訊息" />
+        <a class="side-contact" href="contact_01.html"><img src="old/images/contact_link.gif" alt="聯絡 superun" /></a>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">Copyright © Superun</div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
